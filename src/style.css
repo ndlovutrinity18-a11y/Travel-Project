@@ -77,6 +77,7 @@ h4 {
         font-size: 24px;
 
     }
+    
     main{
         padding: 20px 10px;
         margin: auto;
@@ -89,24 +90,22 @@ h4 {
         min-width: 0;
         margin-bottom: 20px;
     }
-    section.center-grid img{
-        width: 100%;
-        height: auto ;
-        overflow: visible!important;
-        min-height: 0;
-        min-width: 0;
-    }
+    
     section.center-grid {
         grid-template-columns: 1fr;
     }
-    .jozi-info {
-        align-items:center;
+    .jozi-info{
+        align-items: center;
+        padding: 10px 10px;
+        display: block;
+        background-color: white;
     }
     section.grid-footer {
         grid-template-columns: 1fr;
     }
     
 }
+/*main styles*/
 
 section.grid-footer {
     background-image: linear-gradient(rgba(0,0,0,1.8), rgba(0,0,0,0.9)), url('../images/Hero.png');
@@ -127,8 +126,9 @@ section.center-grid img {
         max-width: 100%;
 }
 .jozi-info {
-
     align-items: center;
+    padding: 40px 20px;
+
 }
 
     

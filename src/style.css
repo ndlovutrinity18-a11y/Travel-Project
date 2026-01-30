@@ -4,11 +4,7 @@ body{
     margin-bottom: 10px;
   background-color: #272044;
 }
-.container {
-    margin:auto;
-    width: 100%;
 
-}
 header {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('../images/Hero-cover.png');
     background-size: cover;
@@ -45,21 +41,12 @@ h4 {
     text-decoration: none;
     text-transform: uppercase;
 }
-.center-grid img {
-    width: 100%;
-}
-@media(min-width:600px){
-    .img-main{
-    display: none;
-        
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     header {
         padding: 20px 10px;
-        margin: auto;
+        margin: 0;
         align-items: center;
+        width: 100%;
     }
     h1 {
         font-size: 40px;
@@ -70,6 +57,11 @@ h4 {
     h3{
         font-size: 16px;
     }
+    .img-responsive{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
     h4 {
         font-size: 18px;
     }
@@ -77,32 +69,22 @@ h4 {
         font-size: 24px;
 
     }
+    .grid-3-columns{
+        grid-template-columns: 1fr !important;
+    }
+    .grid{
+        grid-template-columns: 1fr !important;
+    }
     
     main{
         padding: 20px 10px;
         margin: auto;
-    }
-    .img-main{
-        width: 100%;
-        height: auto ;
-        overflow: visible!important;
-        min-height: 0;
-        min-width: 0;
-        margin-bottom: 20px;
-    }
     
-    section.center-grid {
-        grid-template-columns: 1fr;
     }
-    .jozi-info{
-        align-items: center;
-        padding: 10px 10px;
-        display: block;
-        background-color: white;
-    }
-    section.grid-footer {
-        grid-template-columns: 1fr;
-    }
+section.malls{
+    display: block;
+    width: 100%;
+}
     
 }
 /*main styles*/
@@ -112,11 +94,9 @@ section.grid-footer {
     padding: 40px 20px;
     color: white;
 }
-section.center-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-    align-items: center;
+.container {
+    max-width: 1400px;
+    margin:0 auto;
 
 }
 section.center-grid img {
@@ -125,16 +105,91 @@ section.center-grid img {
         display: block;
         max-width: 100%;
 }
-.jozi-info {
+
+section{
+    margin: 0 auto;
+    padding: 100px 
+}
+
+ /*Malls Section*/ 
+ section.malls {
+    background-color: pink;
     align-items: center;
     padding: 40px 20px;
 
+ }
+.text-center {
+    text-align: center;
 }
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    background-color: white;
+    margin: 30px 0;
+}
+.card-body{
+    padding: 20px;
+}
+.card h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 20px;
+    color: #272044;
+    line-height: 1.5;
+}
+.card p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #272044;
+    font-weight: 400;
+    opacity: 0.8;
+    padding: 0 20px 20px 20px;
+}
+.card h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 0;
+    color: #272044;
+    line-height: 1.5;
+}
+.btn-small{
+    display:block;
+    padding: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    line-height: 21px;
+    letter-spacing: 3px;
+    color:white;
+    background-color: #272044;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
 
-    
+}
+ 
+
 main{
     padding: 40px 20px;
-    text-align: center;
+    background-color: white;
 }
 main h3{
     font-weight: 700;
@@ -176,8 +231,6 @@ section li {
     color: white;
 } 
 .grid-footer {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    text-align: center;
 }

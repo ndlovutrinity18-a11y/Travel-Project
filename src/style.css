@@ -86,7 +86,8 @@ section.malls{
     width: 100%;
 }
 section.introduction{
-    
+    display: block;
+    width: 100%;
 }
     
 }
